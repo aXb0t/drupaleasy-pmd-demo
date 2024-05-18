@@ -8,11 +8,11 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:'
+    parent: "main:"
 name: Repository
 type: repository
-description: ''
-help: ''
+description: "Provides repository URL for users."
+help: ""
 new_revision: true
 preview_mode: 1
 display_submitted: true
