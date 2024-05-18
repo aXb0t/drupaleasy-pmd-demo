@@ -35,7 +35,7 @@ use StringTranslationTrait;
   /**
    * Constructs a DrupaleasyRepositoriesBatch object.
    *
-   * @param \Drupal\drupaleasy_repositories\DrupaleasyRepositoriesService $drupaleasyRepositoriesService
+   * @param \Drupal\drupaleasy_repositories\DrupaleasyRepositoriesService $drupaleasy_repositories_service
    *   The drupaleasy_repositories.service service.
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
    *   The entity type manager.
