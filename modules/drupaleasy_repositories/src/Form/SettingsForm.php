@@ -12,7 +12,7 @@ use Drupal\Component\Utility\Unicode;
 /**
  * Configure DrupalEasy Repositories settings for this site.
  */
-class SettingsForm extends ConfigFormBase {
+final class SettingsForm extends ConfigFormBase {
 
   /**
    * The DrupalEasy repositories manager service.

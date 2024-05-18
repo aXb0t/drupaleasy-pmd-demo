@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Provides a DrupalEasy Repositories form.
  */
-class UpdateRepositoriesForm extends FormBase {
+final class UpdateRepositoriesForm extends FormBase {
 
   /**
    * The DrupalEasy repositories service.

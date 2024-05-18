@@ -17,7 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   cron = {"time" = 60}
  * )
  */
-class RepositoryNodeUpdater extends QueueWorkerBase implements ContainerFactoryPluginInterface {
+final class RepositoryNodeUpdater extends QueueWorkerBase implements ContainerFactoryPluginInterface {
   /**
    * The DrupalEasy repositories service.
    *

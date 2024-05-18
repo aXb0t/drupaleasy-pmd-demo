@@ -51,7 +51,7 @@ abstract class DrupaleasyRepositoriesPluginBase extends PluginBase implements Dr
   /**
    * {@inheritdoc}
    */
-  public function __construct(array $configuration, string $plugin_id, mixed $plugin_definition, MessengerInterface $messenger, KeyRepositoryInterface $key_repository) {
+  final public function __construct(array $configuration, string $plugin_id, mixed $plugin_definition, MessengerInterface $messenger, KeyRepositoryInterface $key_repository) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->messenger = $messenger;
     $this->keyRepository = $key_repository;
