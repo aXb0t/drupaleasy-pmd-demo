@@ -16,3 +16,25 @@ Rename `github.key.example` to `github.key` and add your Github Personal Access 
   - Repository: Edit own content
   - Repository: Delete own content
 
+## Run code quality checks and tests
+
+Assume tests are run from inside the container.
+```
+ddev ssh
+```
+
+Run code quality checks:
+```
+phpstan analyze --level 5 web/modules/custom/drupaleasy_repositories
+```
+
+Run all the tests:
+```
+phpunit web/modules/custom/drupaleasy_repositories/tests/
+```
+
+Run a the Unit tests:
+```
+phpunit web/modules/custom/drupaleasy_repositories/tests/src/Unit/
+```
+
