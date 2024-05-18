@@ -1,0 +1,38 @@
+# Ignore SO files
+.DS_Store
+.idea
+
+# Ignore contributed code.
+vendor
+web/core
+web/modules/contrib
+web/profiles/contrib
+web/themes/contrib
+web/sites/default/files
+
+# Ignore scaffolded files.
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.ht.router.php
+web/.htaccess
+web/autoload.php
+web/example.gitignore
+web/index.php
+web/INSTALL.txt
+web/README.md
+web/robots.txt
+web/update.php
+web/web.config
+/.editorconfig
+/.gitattributes
+
+# Ignore logs.
+logs
+!logs/.gitkeep
+
+# Ignore database backups.
+*.sql.gz
+
+# Ignore secrets
+*.key
