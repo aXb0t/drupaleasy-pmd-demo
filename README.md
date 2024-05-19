@@ -18,7 +18,7 @@ Rename `github.key.example` to `github.key` and add your Github Personal Access 
 
 ### Custom Module Location
 
-The custom module is located in the project root `modules/` directory. It is symlinked to the `web/modules/custom/`. I can't remember why.
+The custom module is located in the project root `modules/` directory. It is symlinked to the `web/modules/custom/` to allow Composer to manage the custom module as a dependency.
 
 ## Run code quality checks and tests
 
@@ -27,10 +27,12 @@ Run PHP Code Sniffer, a convenience command is available in DDEV:
 ddev sniff
 ```
 
-Assume the following tests are run from inside the container.
+Run PHPStan with DDEV, passing along a level:
 ```
-ddev ssh
+ddev stan 3
 ```
+
+Assume the following tests are run from inside the container (`ddev ssh`):
 
 Run code quality checks:
 ```
