@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Description: Runs php code sniffer in the container
+## Usage: sniff
+## Example: ddev sniff
+
+# `||true` exempts bash from returning a non-zero exit code because of phpcs errors.
+
+phpcs web/core/modules/node/node.module || true

@@ -18,7 +18,12 @@ Rename `github.key.example` to `github.key` and add your Github Personal Access 
 
 ## Run code quality checks and tests
 
-Assume tests are run from inside the container.
+Run PHP Code Sniffer, a convenience command is available in DDEV:
+```
+ddev sniff
+```
+
+Assume the following tests are run from inside the container.
 ```
 ddev ssh
 ```
