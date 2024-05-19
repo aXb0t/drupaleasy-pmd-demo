@@ -49,3 +49,5 @@ Run a the Unit tests:
 phpunit web/modules/custom/drupaleasy_repositories/tests/src/Unit/
 ```
 
+*NOTE:* it looks like code sniffing is incorrectly reporting errors like "Inline doc block comments are not allowed; use "/* Comment */" or "// Comment" instead". The issue appears to be known, and discussed here:
+See: https://www.drupal.org/project/drupal/issues/2719653#comment-14297067
