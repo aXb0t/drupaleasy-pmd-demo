@@ -1,0 +1,62 @@
+{
+  "breadcrumbs.enabled": true,
+  "css.validate": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tabSize": 2,
+  "editor.autoIndent": "full",
+  "editor.insertSpaces": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrapColumn": 80,
+  "editor.wordWrap": "off",
+  "editor.detectIndentation": true,
+  "editor.rulers": [
+    80
+  ],
+  "files.associations": {
+    "*.inc": "php",
+    "*.module": "php",
+    "*.install": "php",
+    "*.theme": "php",
+    "*.profile": "php",
+    "*.tpl.php": "php",
+    "*.test": "php",
+    "*.php": "php",
+    "*.info": "ini"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.restoreUndoStack": false,
+  "files.insertFinalNewline": true,
+  "html.format.enable": true,
+  "html.format.wrapLineLength": 80,
+  "telemetry.telemetryLevel": "off",
+
+  /* PHP Intelephense (bmewburn.vscode-intelephense-client) */
+  "intelephense.environment.includePaths": [
+    "core/",
+    "core/includes",
+    "../vendor/"
+  ],
+  /* files.exclude and files.watcherExclude settings via
+https://github.com/microsoft/vscode/issues/11963#issuecomment-317830768 */
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/tmp": true,
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/dist": true
+    },
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/**": true,
+      "**/tmp/**": true,
+      "**/bower_components/**": true,
+      "**/dist/**": true
+    },
+}
