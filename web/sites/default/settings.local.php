@@ -32,8 +32,9 @@
  *
  * @see https://wiki.php.net/rfc/expectations
  */
-assert_options(ASSERT_ACTIVE, TRUE);
-assert_options(ASSERT_EXCEPTION, TRUE);
+// Deprecated functions from old settings.local.php file
+// assert_options(ASSERT_ACTIVE, TRUE);
+// assert_options(ASSERT_EXCEPTION, TRUE);
 
 /**
  * Enable local development services.

@@ -5,8 +5,8 @@ namespace Drupal\Tests\drupaleasy_repositories\Kernel;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\drupaleasy_repositories\DrupaleasyRepositoriesService;
 use Drupal\KernelTests\KernelTestBase;
-use Drupal\Tests\drupaleasy_repositories\Traits\RepositoryContentTypeTrait;
 use Drupal\node\Entity\Node;
+use Drupal\Tests\drupaleasy_repositories\Traits\RepositoryContentTypeTrait;
 use Drupal\user\Entity\User;
 use Drupal\user\UserInterface;
 

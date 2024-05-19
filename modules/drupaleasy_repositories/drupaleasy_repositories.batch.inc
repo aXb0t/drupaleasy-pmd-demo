@@ -4,6 +4,7 @@
  * @file
  * Batch-related functions for DrupalEasy Repositories module.
  */
+
 /**
  * Calls the correct method responsible for handling a given batch operation.
  *

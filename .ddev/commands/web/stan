@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Runs php code sniffer in the container
+## Usage: stan
+## Example: ddev stan [level]
+
+phpstan analyze --level "$@" web/modules/custom/drupaleasy_repositories || true

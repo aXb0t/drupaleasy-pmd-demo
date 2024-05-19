@@ -2,10 +2,12 @@
 
 namespace Drupal\Tests\drupaleasy_repositories\Functional;
 
+// phpcs:disable
 //use Drupal\field\Entity\FieldConfig;
 //use Drupal\field\Entity\FieldStorageConfig;
 //use Drupal\field\Entity\FieldConfig;
 //use Drupal\Tests\drupaleasy_repositories\Traits\RepositoryContentTypeTrait;
+// phpcs:enable
 use Drupal\Tests\BrowserTestBase;
 
 /**
@@ -14,6 +16,7 @@ use Drupal\Tests\BrowserTestBase;
  * @group drupaleasy_repositories
  */
 class AddYmlRepoTest extends BrowserTestBase {
+  // phpcs:ignore
   //use RepositoryContentTypeTrait;
 
   /**
@@ -45,23 +48,24 @@ class AddYmlRepoTest extends BrowserTestBase {
     // with $this->rootUser.
     $admin_user = $this->drupalCreateUser(['configure drupaleasy repositories']);
     $this->drupalLogin($admin_user);
-
-//    $this->createRepositoryContentType();
-//
-//    // Create User entity Repository URL field.
-//    FieldStorageConfig::create([
-//      'field_name' => 'field_repository_url',
-//      'type' => 'link',
-//      'entity_type' => 'user',
-//      'cardinality' => -1,
-//    ])->save();
-//    FieldConfig::create([
-//      'field_name' => 'field_repository_url',
-//      'entity_type' => 'user',
-//      'bundle' => 'user',
-//      'label' => 'Repository URL',
-//    ])->save();
-//
+    // phpcs:disable
+    //    $this->createRepositoryContentType();
+    //
+    //    // Create User entity Repository URL field.
+    //    FieldStorageConfig::create([
+    //      'field_name' => 'field_repository_url',
+    //      'type' => 'link',
+    //      'entity_type' => 'user',
+    //      'cardinality' => -1,
+    //    ])->save();
+    //    FieldConfig::create([
+    //      'field_name' => 'field_repository_url',
+    //      'entity_type' => 'user',
+    //      'bundle' => 'user',
+    //      'label' => 'Repository URL',
+    //    ])->save();
+    //
+    // phpcs:enable
     /** @var \Drupal\Core\Entity\EntityDisplayRepository $entity_display_repository */
     $entity_display_repository = \Drupal::service('entity_display.repository');
     $entity_display_repository->getFormDisplay('user', 'user', 'default')
@@ -69,15 +73,17 @@ class AddYmlRepoTest extends BrowserTestBase {
       ->save();
   }
 
+  // phpcs:disable
   /**
    * Test callback.
    */
-//  public function testSomething() {
-//    $admin_user = $this->drupalCreateUser(['access administration pages']);
-//    $this->drupalLogin($admin_user);
-//    $this->drupalGet('admin');
-//    $this->assertSession()->elementExists('xpath', '//h1[text() = "Administration"]');
-//  }
+  //  public function testSomething() {
+  //    $admin_user = $this->drupalCreateUser(['access administration pages']);
+  //    $this->drupalLogin($admin_user);
+  //    $this->drupalGet('admin');
+  //    $this->assertSession()->elementExists('xpath', '//h1[text() = "Administration"]');
+  //  }
+  // phpcs:enable
 
   /**
    * Test that the settings page can be reached and works as expected.
@@ -156,6 +162,8 @@ class AddYmlRepoTest extends BrowserTestBase {
     $session->responseContains('The changes have been saved.');
     // We can't check for the following message unless we also have the future
     // drupaleasy_notify module enabled.
+    // Ignore following code comment to pass phpcs.
+    // phpcs:ignore
     // $session->responseContains('The repo named <em class="placeholder">The Batman repository</em> has been created');
 
     // Find the new repository node.
@@ -221,8 +229,9 @@ class AddYmlRepoTest extends BrowserTestBase {
 
     // We can't check for the following message unless we also have the future
     // drupaleasy_notify module enabled.
+    // Ignore following code comment to pass phpcs.
+    // phpcs:ignore Drupal.Files.LineLength.TooLong
     // $session->responseContains('The repo named The Batman repository has been deleted (/node/1). The repo node is owned by admin (1).');
-
     // Check to ensure there are zero repository nodes.
     /** @var \Drupal\Core\Entity\Query\QueryInterface $query */
     $query = \Drupal::entityQuery('node');
