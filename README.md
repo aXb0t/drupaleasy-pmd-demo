@@ -16,6 +16,10 @@ Rename `github.key.example` to `github.key` and add your Github Personal Access 
   - Repository: Edit own content
   - Repository: Delete own content
 
+### Custom Module Location
+
+The custom module is located in the project root `modules/` directory. It is symlinked to the `web/modules/custom/`. I can't remember why.
+
 ## Run code quality checks and tests
 
 Run PHP Code Sniffer, a convenience command is available in DDEV:

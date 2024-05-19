@@ -3,7 +3,7 @@
 ## Description: Runs php code sniffer in the container
 ## Usage: sniff
 ## Example: ddev sniff
+## Reference: https://github.com/squizlabs/PHP_CodeSniffer/wiki
+## `||true` exempts bash from returning a non-zero exit code because of phpcs errors.
 
-# `||true` exempts bash from returning a non-zero exit code because of phpcs errors.
-
-phpcs web/core/modules/node/node.module || true
+phpcs web/modules/custom/drupaleasy_repositories || true

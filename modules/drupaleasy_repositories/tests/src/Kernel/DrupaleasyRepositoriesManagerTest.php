@@ -50,7 +50,8 @@ class DrupaleasyRepositoriesManagerTest extends KernelTestBase {
     $this->assertArrayHasKey('label', $plugin_def, 'The "Label" array key does not exist.');
     $this->assertTrue($plugin_def['label'] == 'Remote .yml file', 'The "Label" array value does not match.');
   }
-    /**
+
+  /**
    * Test creating an instance of the GitHub plugin.
    *
    * @test
