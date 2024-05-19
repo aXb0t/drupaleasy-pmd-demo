@@ -105,9 +105,9 @@
         "drupal/core-dev": "^10.0",
         "drupal/devel": "^5.1",
         "kint-php/kint": "^5.0",
-        "mglaman/phpstan-drupal": "^1.1",
-        "phpstan/extension-installer": "^1.2",
-        "phpstan/phpstan": "^1.9",
-        "phpstan/phpstan-deprecation-rules": "^1.1"
+        "mglaman/phpstan-drupal": "^1.2",
+        "phpstan/extension-installer": "^1.3",
+        "phpstan/phpstan": "^1.11",
+        "phpstan/phpstan-deprecation-rules": "^1.2"
     }
 }
