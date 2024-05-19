@@ -1,10 +1,8 @@
 <?xml version="1.0"?>
 <ruleset name="Custom Drupal code standards">
-
   <!-- Combine these rulesets. -->
   <rule ref="Drupal"/>
   <rule ref="DrupalPractice"/>
-
   <!-- Ignore any files in these paths. -->
   <exclude-pattern>*/.git/*</exclude-pattern>
   <exclude-pattern>*/config/*</exclude-pattern>
@@ -15,13 +13,10 @@
   <exclude-pattern>*/node_modules/*</exclude-pattern>
   <exclude-pattern>*rules_export.txt</exclude-pattern>
   <exclude-pattern>*/features/*</exclude-pattern>
-
   <arg name="extensions" value="php,module,inc,install,test,profile,theme,css,info,txt,md,yml"/>
-
   <!-- For colored cli output -->
   <arg name="colors"/>
   <!-- To show rule names. Equivalent to "phpcs -s" -->
   <arg value="sp"/>
-
 </ruleset>
 
