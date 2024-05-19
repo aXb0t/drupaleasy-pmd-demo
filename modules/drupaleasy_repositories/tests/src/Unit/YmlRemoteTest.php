@@ -57,22 +57,18 @@ class YmlRemoteTest extends UnitTestCase {
    * Test that the help text returns as expected.
    *
    * @covers ::validateHelpText
-   * @test
-   */
-  public
-  function testValidateHelpText(): void {
-    self::assertEquals('https://anything.anything/anything/anything.yml (or "http")', $this->ymlRemote->validateHelpText(), 'Help text does not match.');
+   * @test *   *   *   *
+   */ testValidateHelpText(): void {
+  self::assertEquals('https://anything.anything/anything/anything.yml (or "http")', $this->ymlRemote->validateHelpText(), 'Help text does not match.');
   }
 
   /**
    * Data provider for testValidate().
    *
    * @return array<int, array<int, bool|string>>
-   *   Array of test strings and results.
-   */
-  public
-  function validateProvider(): array {
-    return [
+   *   Array of test strings and results. * *   *   *   *   *
+   */ validateProvider(): array {
+  return [
       [
         'A test string',
         FALSE,
@@ -113,7 +109,7 @@ class YmlRemoteTest extends UnitTestCase {
         'ftp://dev.www.mysite.com/anything.yml',
         FALSE,
       ],
-    ];
+  ];
   }
 
   /**
@@ -122,25 +118,21 @@ class YmlRemoteTest extends UnitTestCase {
    * @dataProvider validateProvider
    *
    * @covers ::validate
-   * @test
-   */
-  public
-  function testValidate(string $testString, bool $expected): void {
-    self::assertEquals($expected, $this->ymlRemote->validate($testString), "Validation of '{$testString}' does not return '{$expected}'.");
+   * @test * * * * * *   *   *   *   *
+   */ testValidate(string $testString, bool $expected): void {
+  self::assertEquals($expected, $this->ymlRemote->validate($testString), "Validation of '{$testString}' does not return '{$expected}'.");
   }
 
   /**
    * Test that a repo can be read properly.
    *
    * @covers ::getRepo
-   * @test
-   */
-  public
-  function testGetRepo(): void {
-    $repo = $this->ymlRemote->getRepo(__DIR__ . '/../../assets/batman-repo.yml');
-    $repo = reset($repo);
-    self::assertEquals('The Batman repository', $repo['label'], 'Label does not match.');
-    self::assertEquals('This is where Batman keeps all his crime-fighting code.', $repo['description'], 'Description does not match.');
+   * @test * * * * * * * * *   *   *   *
+   */ testGetRepo(): void {
+  $repo = $this->ymlRemote->getRepo(__DIR__ . '/../../assets/batman-repo.yml');
+  $repo = reset($repo);
+  self::assertEquals('The Batman repository', $repo['label'], 'Label does not match.');
+  self::assertEquals('This is where Batman keeps all his crime-fighting code.', $repo['description'], 'Description does not match.');
   }
 
 }
